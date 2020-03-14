@@ -10,7 +10,7 @@ leaderRouter.route('/:leaderid').all((req,res,next)=>{
     res.setHeader('Content-Type','text/plain');
     next();
 }).get((req,res,next)=>{
-    res.end("Will send the details of the leader : "+req.params.leaderid);
+    res.end("Will send the details of the leaderk : "+req.params.leaderid);
 }).post((req,res,next)=>{
     res.end('Post operation not supported on /leaders/');
 }).put((req,res,next)=>{
