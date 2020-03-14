@@ -10,7 +10,7 @@ dishRouter.route('/:dishid').all((req,res,next)=>{
     res.setHeader('Content-Type','text/plain');
     next();
 }).get((req,res,next)=>{
-    res.end("Will send the details of the disk : "+req.params.dishid);
+    res.end("Will send the details of the dism : "+req.params.dishid);
 }).post((req,res,next)=>{
     res.end('Post operation not supported on /dish/');
 }).put((req,res,next)=>{
